@@ -13,12 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        'corporate-blue': "hsl(var(--corporate-blue))",
+        'corporate-blue-dark': "hsl(var(--corporate-blue-dark))",
+        'corporate-blue-light': "hsl(var(--corporate-blue-light))",
+        'corporate-gray': "hsl(var(--corporate-gray))",
+        'corporate-gray-light': "hsl(var(--corporate-gray-light))",
+        'corporate-gray-lighter': "hsl(var(--corporate-gray-lighter))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

@@ -126,8 +126,8 @@ const Footer = () => {
               © {currentYear} Job Nexus India. All rights reserved.
             </div>
 
-            {/* Legal Links */}
-            <div className="flex items-center gap-6 text-sm">
+            {/* Legal Links and Netlify Credit */}
+            <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 text-sm">
               <a
                 href="/terms-of-service"
                 className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-1"
@@ -148,13 +148,26 @@ const Footer = () => {
               >
                 Report Fraud
               </a>
+              {/* Netlify Open Source Required Link */}
+              <a 
+                href="https://netlify.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80 block"
+              >
+                <img 
+                  src="https://netlify.com/img/global/badges/netlify-color-accent.svg" 
+                  alt="Deploys by Netlify" 
+                  className="h-6 w-auto"
+                />
+              </a>
             </div>
           </div>
 
           {/* Disclaimer */}
           <div className="mt-4 pt-4 border-t border-gray-700">
             <p className="text-xs text-gray-500 text-center">
-              Job Nexus India is a job portal platform. We verify employers to the best of our ability, 
+              Job Nexus India is an open-source job portal platform. We verify employers to the best of our ability, 
               but job seekers are advised to exercise due diligence when applying for positions.
             </p>
           </div>
